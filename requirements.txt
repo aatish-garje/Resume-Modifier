@@ -1,23 +1,12 @@
-# Streamlit web app
 streamlit
-
-# Resume and JD parsing
 pdfplumber
 python-docx
-
-# NLP and keyword extraction
 spacy
 nltk
 tqdm
 regex
-
-# OpenRouter (OpenAI-compatible) GPT API
 openai
 aiohttp
-
-# Fuzzy keyword matching
 fuzzywuzzy
-python-Levenshtein  # Required for speed in fuzzywuzzy
-
-# Optional enhancements
+python-Levenshtein
 docx

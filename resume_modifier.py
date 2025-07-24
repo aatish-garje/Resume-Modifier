@@ -7,7 +7,13 @@ import spacy
 from openai import OpenAI
 from fuzzywuzzy import fuzz
 import spacy.cli
-spacy.cli.download("en_core_web_sm")
+import os
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    import spacy.cli
+    spacy.cli.download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
 # --- Setup ---
 st.set_page_config(page_title="AI Resume Optimizer", layout="centered")
