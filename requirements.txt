@@ -3,3 +3,4 @@ python-docx
 pdfplumber
 openai
 spacy
+fuzzywuzzy
