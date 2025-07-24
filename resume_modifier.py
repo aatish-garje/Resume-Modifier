@@ -6,6 +6,8 @@ import re
 import spacy
 from openai import OpenAI
 from fuzzywuzzy import fuzz
+import spacy.cli
+spacy.cli.download("en_core_web_sm")
 
 # --- Setup ---
 st.set_page_config(page_title="AI Resume Optimizer", layout="centered")
